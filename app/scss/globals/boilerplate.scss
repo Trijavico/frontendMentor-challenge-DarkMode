@@ -1,0 +1,43 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-inter);
+    background-color: var(--background);
+    color: var(--text-color2);
+    min-height: 150vh;
+}
+
+.visual-hidden{
+    position: absolute;
+    top: auto;
+    left: -9999px;
+}
+
+body.light{
+    --background: var(--light-bg);
+    --text-color2: var(--light-text2);
+    --text-color1: var(--light-text1);
+    --card-bg: var(--light-card);
+    --card-hover: var(--onhover-light);
+    --toggle: var(--toggle-light);
+    --toggle-bg: var(--toggle-bg-light);
+}
+
+body.dark{
+    --background: var(--dark-bg);
+    --text-color1: var(--dark-text1);
+    --text-color2: var(--dark-text2);
+    --card-bg: var(--dark-card);
+    --card-hover: var(--onhover-dark);
+    --toggle: var(--light-bg);
+    --toggle-bg: var(--toggle-bg-dark);
+}
